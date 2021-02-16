@@ -31,9 +31,16 @@ public class DealershipTest {
         assertEquals(20000, dealership.getTillAmount(), 0.0);
     }
 
+    @Test
     public void canGetNumberOfCarsInStock(){
         dealership.addCar(car1);
         dealership.addCar(car2);
         assertEquals(2, dealership.getNumberOfCarsInStock());
+    }
+
+    @Test
+    public void canBuyCar(){
+        dealership.buyVehicle(car1);
+        assertEquals(15000, dealership.getTillAmount(), 0.0);
     }
 }

@@ -23,4 +23,12 @@ public class Dealership {
     public int getNumberOfCarsInStock() {
         return this.cars.size();
     }
+
+
+    public void buyVehicle(Car car) {
+        if(this.till >= car.getPrice()) {
+            this.till -= car.getPrice();
+            this.addCar(car);
+        }
+    }
 }
