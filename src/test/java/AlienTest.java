@@ -18,7 +18,7 @@ public class AlienTest {
     @Before
     public void before() {
         alien = new Alien(42.42);
-        car = new Car(5000, "red", EngineType.PETROL, GearboxType.MANUAL);
+        car = new Car(5, "red", EngineType.PETROL, GearboxType.MANUAL);
     }
 
     @Test
@@ -36,6 +36,14 @@ public class AlienTest {
         alien.addCar(car);
         assertEquals(1, alien.getOwnedVehicles());
     }
+
+    @Test
+    public void canBuyCar(){
+        alien.buyVehicle(car);
+        assertEquals(37.42, alien.getSpaceMoney(), 0.0);
+
+    }
+
 
 
 }

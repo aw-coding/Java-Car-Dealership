@@ -25,7 +25,15 @@ public class Alien {
     }
 
     public void addCar(Car car) {
+
         this.ownedVehicles.add(car);
 
+    }
+
+    public void buyVehicle(Car car) {
+        if(this.spaceMoney >= car.getPrice()) {
+            this.spaceMoney -= car.getPrice();
+            this.addCar(car);
+        }
     }
 }
