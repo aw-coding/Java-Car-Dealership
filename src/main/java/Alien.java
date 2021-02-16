@@ -21,4 +21,9 @@ public class Alien {
     public int getOwnedVehicles() {
         return this.ownedVehicles.size();
     }
+
+    public void addCar(Car car) {
+        this.ownedVehicles.add(car);
+
+    }
 }
