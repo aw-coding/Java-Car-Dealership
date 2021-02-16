@@ -18,6 +18,12 @@ public class FlyingSaucer extends HybridCar{
     }
 
 
+    public void abduct(Alien abductee) {
+        abductees.add(abductee);
+    }
 
 
+    public int getAbudcteeCount() {
+        return this.abductees.size();
+    }
 }

@@ -1,3 +1,4 @@
+import People.Alien;
 import org.junit.Before;
 import org.junit.Test;
 import vehicles.EngineType;
@@ -20,6 +21,13 @@ public class FlyingSaucerTest {
     @Test
     public void canGetMinifridge(){
         assertEquals("Wow! This thing is full of space juice!", flyingSaucer.getMinifridge());
+    }
+
+    @Test
+    public void canAbduct(){
+        Alien abductee = new Alien(500.0);
+        flyingSaucer.abduct(abductee);
+        assertEquals(1, flyingSaucer.getAbudcteeCount());
     }
 
 }
