@@ -1,11 +1,9 @@
+import People.Alien;
 import org.junit.Before;
 import org.junit.Test;
 import vehicles.Car;
 import vehicles.EngineType;
 import vehicles.GearboxType;
-
-import java.util.ArrayList;
-
 
 
 import static org.junit.Assert.assertEquals;

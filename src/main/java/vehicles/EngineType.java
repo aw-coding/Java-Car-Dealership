@@ -3,7 +3,8 @@ package vehicles;
 public enum EngineType {
 
     PETROL,
-    HYBRID;
+    HYBRID,
+    IONDRIVE;
 
 
 }
